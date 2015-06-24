@@ -7,8 +7,8 @@
 #include "stdafx.h"
 
 Crown::Crown(int id) {
-	this->value = rand() % 99 + 10;
-	this->weight = rand() % 10 + 10;
+	this->value = rand() % 9000 + 1000
+	this->weight = rand() % 1500 + 500;
 	this->id = id;
 }
 

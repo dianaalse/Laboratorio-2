@@ -17,7 +17,7 @@ Treasure::Treasure() {
 }
 
 void Treasure::createCoins() {
-	q1 = rand() % 9 + 10;
+	q1 = rand() % 5 + 5;
 	ocoins = new Coin*[q1];
 	for (int i = 0; i < q1; ++i) {
 		ocoins[i] = new Coin(id++);
@@ -26,7 +26,7 @@ void Treasure::createCoins() {
 
 void Treasure::createRings() {
 
-	 q2 = rand() % 5 + 5;
+	 q2 = rand() % 2 + 5;
 	 orings = new Ring*[q2];
 	 for (int i = 0; i < q2; i++) {
 	 orings[i] = new Ring (id++);
@@ -35,7 +35,7 @@ void Treasure::createRings() {
 }
 
 void Treasure::createCrowns() {
-	q3 = rand() % 9 + 1;
+	q3 = rand() % 4 + 1;
 	ocrowns = new Crown*[q3];
 	for (int i = 0; i < q3; i++) {
 		ocrowns[i] = new Crown(id++);
@@ -44,7 +44,7 @@ void Treasure::createCrowns() {
 }
 
 void Treasure::createCollars() {
-	q4 = rand() % 10 + 10;
+	q4 = rand() % 3 + 2;
 	ocollars = new Collar*[q4];
 	for (int i = 0; i < q4; i++) {
 		ocollars[i] = new Collar (id++);

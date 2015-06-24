@@ -17,13 +17,21 @@ friend ostream& operator<<(ostream&, const Sack &);
 
 public:
 	Sack();
-	void generateSack(Coin**, Ring**,Crown**, Collar**,int,int,int,int,int,
-	int, int, int);
+	void generateSack(int, int, int, int);
+	template<class T>
+	void imprimirV(T * v, int n, bool cambioLinea) {
+		for (int i = 0; i < n; ++i) {
+			file << v[i] << " ";
+		}
+		if (cambioLinea) {
+			file << endl;
+		}
+	}
 	virtual ~Sack();
 
 private:
-	int totalweight;
-	Sack ** osack;
+	int totalWeight;
+	//Sack ** osack;
 };
 
 ostream& operator<<(ostream&, const Sack &);

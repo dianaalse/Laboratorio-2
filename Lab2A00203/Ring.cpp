@@ -7,8 +7,8 @@
 #include "stdafx.h"
 
 Ring::Ring(int id) {
-	this->value = rand() % 99 + 10;
-	this->weight = rand() % 10 + 10;
+	this->value = rand() % 100 + 100;
+	this->weight = rand() % 100 + 200;
 	this->id = id;
 }
 

@@ -8,8 +8,8 @@
 
 
 Collar::Collar(int id) {
-	this->value = rand() % 99 + 10;
-	this->weight = rand() % 10 + 10;
+	this->value = rand() % 2000 + 2000;
+	this->weight = rand() % 500 + 500;
 	this->id = id;
 }
 
